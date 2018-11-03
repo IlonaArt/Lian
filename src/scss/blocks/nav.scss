@@ -1,0 +1,41 @@
+.main-nav {
+  margin-right: 60px;
+  .nav-list {
+    @include ul-style();
+    display: flex;
+    &-item {
+      padding-left: 40px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      &.active {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 1px;
+          background-color: #06060a;
+        }
+        a {
+          color: #000000;
+        }
+      }
+    }
+    &-ref {
+      font-family: "Roboto Bold", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 1.05px;
+      text-transform: uppercase;
+      color: #777777;
+      &:hover {
+        color: #444444;
+      }
+    }
+  }
+}
