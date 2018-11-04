@@ -33,7 +33,8 @@
       letter-spacing: 1.05px;
       text-transform: uppercase;
       color: #777777;
-      &:hover {
+      &:hover,
+      &:focus {
         color: #444444;
       }
     }

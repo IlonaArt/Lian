@@ -14,8 +14,18 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none !important;
+}
+
+%borderless-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 body {
-  
+  font-family: "Roboto", sans-serif;
 }
 
 * {

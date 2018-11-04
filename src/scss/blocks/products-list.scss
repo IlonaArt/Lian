@@ -1,0 +1,35 @@
+.products {
+  background-color: #fafafa;
+  &-list {
+    @include ul-style();
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    grid-auto-flow: dense;
+    margin-bottom: 36px;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 73px;
+  }
+  &-load-button {
+    align-self: center;
+    width: 125px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    background-color: #959595;
+    text-align: center;
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.76px;
+    text-transform: uppercase;
+  }
+}
