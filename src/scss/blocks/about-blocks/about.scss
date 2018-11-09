@@ -1,3 +1,7 @@
+body {
+    background-color: #fafafa;
+}
+
 .section-welcome {
     display: flex;
     align-items: center;
@@ -32,16 +36,10 @@
 .section-story {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 100px;
     .story {
         max-width: 602px;
-        .text {
-            color: #777777;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            margin-bottom: 40px;
-        }
     }
     .title {
         font-size: 18px;
@@ -128,5 +126,71 @@
     margin-right: 54px;
     img {
         width: 100%;
+    }
+}
+
+.text {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.section-team {
+    margin-bottom: 76px;
+}
+
+.team {
+    max-width: 595px;
+    text-align: center;
+    margin: 0 auto;
+    .title {
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+}
+
+.team-list {
+    @include ul-style();
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .team-item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        .text-wrap {
+            padding: 28px 36px 31px;
+            .name {
+                font-size: 24px;
+                font-weight: 300;
+                letter-spacing: 0.96px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #2f302f;
+                margin-bottom: 8px;
+            }
+            .who {
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                line-height: 14px;
+                color: #777777;
+                margin-bottom: 15px;
+            } 
+        }
+        .text {
+            max-width: 264px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.48px;
+            margin-bottom: 0;
+        }
     }
 }
