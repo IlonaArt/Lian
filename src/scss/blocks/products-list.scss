@@ -3,11 +3,13 @@
   &-list {
     @include ul-style();
     display: grid;
+    grid-auto-rows: 30px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     grid-gap: 30px;
-    grid-auto-flow: dense;
     margin-bottom: 36px;
+  }
+  &-link {
+    display: block;
   }
 
   &-wrapper {
