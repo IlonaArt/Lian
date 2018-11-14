@@ -1,0 +1,14 @@
+.portfolio-nav {
+    display: flex;
+    .arrows-wrap {
+        display: flex;
+    }
+    button {
+        display: flex;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
