@@ -1,0 +1,211 @@
+.main-section.about {
+    background-image: url("../../../../build/img/About-img.jpg");
+}
+
+.section-story {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}    
+
+.section-story-wrap {
+    max-width: 602px;
+    .story {
+        &, .text:not(:last-child) {
+        margin-bottom: 40px;
+        }
+    }  
+    .title {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 7.2px;
+        margin-bottom: 42px;
+    }    
+}
+
+.skills-name {
+    color: #2f302f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.4px;
+}
+
+.skills-wrap {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin: 18px 0;
+    background-color: #ebebeb;
+    &.photoshop {
+        &::before {
+            width: calc(90% - 3px);
+        } 
+        &::after, 
+        .percent {
+            right: 10%;
+        }
+    }      
+    &.branding {
+        &::before {
+            width: calc(95% - 3px);
+        }
+        &::after, 
+        .percent{
+            right: 5%;
+        }
+    }    
+    &.photography {
+        &::before {
+            width: calc(50% - 3px);
+        }
+        &::after, 
+        .percent {
+            right: 50%;
+        }
+    }    
+    &.webdesign {
+        &::before {
+            width: calc(85% - 3px);
+        }
+        &::after, 
+        .percent {
+            right: 15%;
+        }
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }    
+    &::before {
+        height: 2px;
+        left: 3px;
+        background-color: #a1a1a1;
+    }
+    &::after {
+        box-sizing: border-box;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #000000;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+    .percent {
+        position: absolute;
+        top: -37px;
+        transform: translateX(calc(100% - 4px)); // 4px - half width of circle
+        display: inline-block;
+        width: 40px;
+        height: 21px;
+        background-color: #041608;
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            display: block;
+            border: 4px solid #000000;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+.story-img {
+    margin-right: 54px;
+    img {
+        width: 100%;
+    }
+}
+
+.text {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section-team {
+    margin-bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team {
+    max-width: 595px;
+    margin-bottom: 40px;
+    text-align: center;
+    .title {
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 38px;
+    }
+}
+
+.team {
+    &-list {
+        @include ul-style();
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &-item {
+        margin: 0 15px 30px 15px;
+        .text-wrap {
+            padding: 28px 36px 31px;
+            background-color: #ffffff;
+            .name {
+                font-size: 24px;
+                font-weight: 300;
+                letter-spacing: 0.96px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #2f302f;
+                margin-bottom: 8px;
+            }
+            .who {
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                line-height: 14px;
+                color: #777777;
+                margin-bottom: 15px;
+            } 
+        }
+        .text {
+            max-width: 264px;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.48px;
+        }
+    }
+    &-ref {
+        display: block;
+    }
+    &-img-wrap {
+        width: 358px;
+        height: 438px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
