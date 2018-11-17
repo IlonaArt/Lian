@@ -1,0 +1,65 @@
+.section-details {
+    padding-top: 72px;
+    .headline-wrap {
+        margin-bottom: 18px;
+        display: inline-block;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 6px;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+    .date-wrap {
+        max-width: 549px;
+        padding: 12px 0 48px 0;
+        border: 0 solid #cccccc;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+    .date-column {
+        display: flex;
+        justify-content: space-between;
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+    .branding-text {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+        color: #555555;
+    }
+    .date-text {
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+        line-height: 48px;
+        color: #555555;
+    }
+    .agency-text {
+        color: #777777;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.35px;
+    }
+    .project-text {
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+    .positions-and-tags {
+        color: #a6a6a6;
+        letter-spacing: 0.4px;
+        padding-top: 8px;
+    } 
+    .project {
+        max-width: 549px;
+        padding-bottom: 50px;
+        &.column1 {
+            padding-top: 30px;
+        }
+    }
+}
