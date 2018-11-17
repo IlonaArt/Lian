@@ -1,38 +1,33 @@
-.centering {
-    max-width: 1195px;
-    margin: 0 auto;
-}
-
 .portfolio-nav {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    background-color: #ffffff;
+    .container {
+        display: flex;
+        height: 60px;
+        background-color: #ffffff;
+    }
     button:hover {
+        svg {
+            fill: #c2c2c2;
+        }
         .arrows-text {
             color: #c2c2c2;
         }
     }
-    .arrows-wrap {
+    .button-prev,
+    .button-next {
+        width: 162px;
         display: flex;
-        height: 100%;
-        max-width: 328px;
-        border: 0 solid #e1e1e1;
-        border-right-width: 1px;
-        border-left-width: 1px;
-        .button-left {
-            padding: 0 40px;
-            border: 0 solid #e1e1e1;
-            border-right-width: 1px;
-            .arrows-text {
-                margin-left: 14px;
-            }
+        justify-content: center;
+        border-left: 1px solid #e1e1e1;
+    }
+    .button-prev {
+        .arrows-text {
+            margin-left: 14px;
         }
-        .button-right {
-            padding: 0 55px;
-            .arrows-text {
-                margin-right: 14px;
-            }
+    }
+    .button-next {
+        border-right: 1px solid #e1e1e1;
+        .arrows-text {
+            margin-right: 14px;
         }
     }
     .button-show {

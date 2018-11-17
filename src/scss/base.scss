@@ -60,28 +60,24 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: center;
   margin-bottom: 72px;
   box-shadow: 0px 3px 5px -1px inset rgba(0, 0, 0, 0.15);
-  .main-text-wrapper {
-      font-weight: 300;
-      text-transform: uppercase;
-      margin-left: 233px;
-      .main-title {
-          padding: 11px 36px 11px 34px;
-          margin-bottom: 38px;
-          background-color: #000;
-          color: #fff;
-          font-size: 48px;
-          line-height: 34px;
-          letter-spacing: 4.8px;
-      }
-      .main-text {
-          color: #000;
-          font-size: 18px;
-          line-height: 24px;
-          letter-spacing: 7.2px;
-      }
-  } 
 }
-
-.filters-button {
-  cursor: pointer;
+.main-text-wrapper {
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+} 
+.main-title {
+  padding: 11px 36px 11px 34px;
+  margin-bottom: 38px;
+  background-color: #000;
+  color: #fff;
+  font-size: 48px;
+  line-height: 34px;
+  letter-spacing: 4.8px;
+}
+.main-text {
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 7.2px;
 }
