@@ -4,12 +4,12 @@
 @import "./fonts.scss";
 @import "./variables.scss";
 @import "./base.scss";
-@import "./blocks/pages/index/header.scss";
-@import "./blocks/pages/index/nav.scss";
-@import "./blocks/pages/index/head-slider.scss";
-@import "./blocks/pages/index/products-filter.scss";
-@import "./blocks/pages/index/products-list.scss";
-@import "./blocks/pages/index/footer.scss";
+@import "./blocks/pages/common/header.scss";
+@import "./blocks/pages/common/nav.scss";
+@import "./blocks/pages/home/head-slider.scss";
+@import "./blocks/pages/common/products-filter.scss";
+@import "./blocks/pages/common/products-list.scss";
+@import "./blocks/pages/common/footer.scss";
 @import "./blocks/pages/about/background-section.scss";
 @import "./blocks/pages/about/section-story.scss";
 @import "./blocks/pages/about/section-team.scss";
@@ -17,3 +17,6 @@
 @import "./blocks/pages/portfolio/products-filter.scss";
 @import "./blocks/pages/portfolio-details/portfolio-nav.scss";
 @import "./blocks/pages/portfolio-details/section-details.scss";
+@import "./blocks/pages/portfolio-details/section-related.scss";
+@import "./blocks/pages/blog/background-section.scss";
+

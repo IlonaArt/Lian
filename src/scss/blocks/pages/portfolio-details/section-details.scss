@@ -1,6 +1,6 @@
 .section-details {
     padding-top: 72px;
-    padding-bottom: 50px;
+    padding-bottom: 144px;
     .text-column {
         max-width: 549px;
         margin-right: 40px;
@@ -42,12 +42,6 @@
         line-height: 48px;
         color: #555555;
     }
-    .agency-text {
-        color: #777777;
-        font-size: 14px;
-        line-height: 30px;
-        letter-spacing: 0.35px;
-    }
     .project-text {
         font-size: 16px;
         line-height: 36px;
@@ -77,6 +71,7 @@
         letter-spacing: 0.7px;
         text-transform: uppercase;
         position: relative;
+        cursor: pointer;
         svg {
             margin-right: 3px;
             fill: #ffffff;
@@ -127,4 +122,11 @@
             }
         }
     }
+}
+
+.agency-text {
+    color: #777777;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.35px;
 }
