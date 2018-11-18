@@ -1,5 +1,10 @@
 .section-details {
     padding-top: 72px;
+    padding-bottom: 50px;
+    .text-column {
+        max-width: 549px;
+        margin-right: 40px;
+    }
     .headline-wrap {
         margin-bottom: 18px;
         display: inline-block;
@@ -12,19 +17,17 @@
         text-transform: uppercase;
     }
     .date-wrap {
-        max-width: 549px;
         padding: 12px 0 48px 0;
         border: 0 solid #cccccc;
         border-top-width: 1px;
         border-bottom-width: 1px;
-    }
-    .date-column {
-        display: flex;
-        justify-content: space-between;
-        max-width: 280px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+        .fa-heart {
+            margin-right: 3px;
+        }
     }
     .branding-text {
+        margin-top: 15px;
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.4px;
@@ -32,6 +35,7 @@
         color: #555555;
     }
     .date-text {
+        margin-right: 66px;
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.35px;
@@ -54,12 +58,73 @@
         color: #a6a6a6;
         letter-spacing: 0.4px;
         padding-top: 8px;
-    } 
-    .project {
-        max-width: 549px;
-        padding-bottom: 50px;
-        &.column1 {
-            padding-top: 30px;
+    }
+    .roles-wrap,
+    .tags-wrap {
+        margin-bottom: 50px;
+    }
+
+    .share {
+        height: 42px;
+        padding: 0 12px;
+        background-color: #707070;
+        border: none;
+        border-radius: 2px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        position: relative;
+        svg {
+            margin-right: 3px;
+            fill: #ffffff;
+        }
+        &:hover {
+            .social-list {
+                display: flex;
+            }
+        }
+        .social {
+            &-list {
+                display: none;
+                @include ul-style();
+                position: absolute;
+                top: 0;
+                right: -15px;
+                align-items: center;
+                height: 42px;
+                padding: 0 18px;
+                background-color: #e1e1e1;
+                transform: translateX(100%);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    border: 8px solid transparent;
+                    border-right-color: #e1e1e1;
+                    transform: translate(-100%, -50%);
+                }
+            }
+            &-item {
+                line-height: normal;
+                &:not(:last-child) {
+                    margin-right: 26px;
+                }
+            }
+            &-link {
+                display: inline-block;
+                svg {
+                    fill: #707070;
+                }
+                &:hover {
+                    svg {
+                        fill: #000000;
+                    }
+                }
+            }
         }
     }
 }

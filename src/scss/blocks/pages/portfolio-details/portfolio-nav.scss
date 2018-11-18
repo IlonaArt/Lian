@@ -1,15 +1,23 @@
 .portfolio-nav {
+    background-color: #ffffff;
     .container {
         display: flex;
         height: 60px;
-        background-color: #ffffff;
     }
-    button:hover {
-        svg {
-            fill: #c2c2c2;
-        }
-        .arrows-text {
-            color: #c2c2c2;
+    button {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+            svg {
+                fill: #777777;
+            }
+            .arrows-text {
+                color: #777777;
+            }
         }
     }
     .button-prev,
@@ -40,14 +48,6 @@
         .arrows-text {
             margin-left: 11px;
         }
-    }
-    button {
-        display: flex;
-        align-items: center;
-        padding: 0;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
     }
     .arrows-text {
         font-size: 13px;
