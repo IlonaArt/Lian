@@ -1,0 +1,17 @@
+.post {
+    &-list-wrap {
+        max-width: 750px;
+        margin-bottom: 101px;
+        .products-load-button {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &-list {
+        @include ul-style();
+        display: flex;
+        flex-direction: column;
+        min-height: 1412px;
+        margin-bottom: 68px;
+    }
+}
