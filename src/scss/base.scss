@@ -22,6 +22,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  text-transform: uppercase;
 }
 
 body {
@@ -43,10 +44,35 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-list-item.active {
   a {
     color: #000000;
   }
+}
+
+.products-load-button {
+  border-radius: 2px;
+  text-align: center;
+  align-self: center;
+  width: 125px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background-color: #959595;
+  text-align: center;
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.76px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .background-section {

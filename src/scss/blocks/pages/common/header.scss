@@ -14,10 +14,9 @@
   }
 }
 .header-search-button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  svg {
-    fill: #777777;
-  }
+    @extend %borderless-btn;
+    cursor: pointer;
+    svg {
+      fill: #777777;
+    }
 }

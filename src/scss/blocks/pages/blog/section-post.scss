@@ -1,5 +1,14 @@
-.post {
-    &-list-wrap {
+.post-section {
+    svg {
+        cursor: pointer;
+        &:hover {
+            fill: #333333;
+            .post-date {
+                color: #333333;
+            }
+        }
+    }
+    .post-list-wrap {
         max-width: 750px;
         margin-bottom: 101px;
         .products-load-button {
@@ -7,14 +16,14 @@
             margin: 0 auto;
         }
     }
-    &-list {
+    .post-list {
         @include ul-style();
         display: flex;
         flex-direction: column;
         min-height: 1412px;
         margin-bottom: 68px;
     }
-    &-list-item {
+    .post-list-item {
         max-width: 358px;
         background-color: #ffffff;
         &:not(:last-child) {
@@ -34,7 +43,6 @@
             border-radius: 3px;
             text-align: center;
             padding: 4px 0;
-            margin-bottom: 24px;
             color: #ffffff;
             background-color: #000000;
         }
@@ -59,6 +67,7 @@
         }
         .calendar-icon, {
             fill: #9a9a9a;
+            margin-right: 6px;
         }
         .share-icon,
         .like-icon,
@@ -69,18 +78,30 @@
             margin-right: 20px;
         }
     }
-    &-date-wrap {
+
+    .blog-image-wrap {
+        height: 245px;
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    .post-date-wrap {
         display: flex;
         align-items: center;
     }
-    &-date {
+    .post-date {
         color: #9a9a9a;
         font-size: 13px;
         line-height: 24px;
         font-weight: 400;
-        margin-left: 6px;
     }
-    &-icon-details {
+    .post-icon-details {
         margin-left: auto;
+    }
+
+    .sidebar-search-button {
+        border: 0;
+        padding: 0;
     }
 }
