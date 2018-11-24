@@ -165,7 +165,7 @@
                 <form class="form-search" name="form-search" action="https://echo.htmlacademy.ru" method="post">
                     <div class="form-wrap">
                         <label class="visually-hidden" for="search-all">Search</label>
-                        <input class="input contact" name="input-search" id="search-all" type="search">
+                        <input class="input contact" name="input-search" id="search-all" type="search" placeholder="Search">
                         <button class="sidebar-search-button" type="submit">
                             <svg aria-hidden="true" width="15" height="15" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
                         </button>
@@ -173,13 +173,15 @@
                 </form>
                 <div class="recent">
                     <h3 class="title-text">recent posts</h3>
-                    <ul class="recent-list">
+                    <ul class="recent-list background">
                         <li class="recent-list-item">
                             <a href="#" class="recent-ref">
                                 <div class="recent-wrap">
                                     <img src="./build/img/recent post1.jpg" width="90" height="65" alt="Recent post-1">
-                                    <b class="recent-title">Lorem ipsum dolor sit amet, consec</b>
-                                    <p class="post-date">July 5, 2016</p>
+                                    <div class="text-wrap">
+                                        <b class="recent-title">Lorem ipsum dolor sit amet, consec</b> 
+                                        <p class="post-date">July 5, 2016</p>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -187,8 +189,10 @@
                             <a href="#" class="recent-ref">
                                 <div class="recent-wrap">
                                     <img src="./build/img/recent post2.jpg" width="90" height="65" alt="Recent post-2">
-                                    <b class="recent-title">Ut wisi enim ad minim veniam, quis</b>
-                                    <p class="post-date">July 17, 2016</p>
+                                    <div class="text-wrap">
+                                        <b class="recent-title">Ut wisi enim ad minim veniam, quis</b> 
+                                        <p class="post-date">July 17, 2016</p>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -196,8 +200,10 @@
                             <a href="#" class="recent-ref">
                                 <div class="recent-wrap">
                                     <img src="./build/img/recent post3.jpg" width="90" height="65" alt="Recent post-3">
-                                    <b class="recent-title">Aliquip ex ea commodo aliquam erat volutpat</b>
-                                    <p class="post-date">July 21, 2016</p>
+                                    <div class="text-wrap">
+                                        <b class="recent-title">Aliquip ex ea commodo aliquam erat volutpat</b> 
+                                        <p class="post-date">July 21, 2016</p>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -205,8 +211,10 @@
                             <a href="#" class="recent-ref">
                                 <div class="recent-wrap">
                                     <img src="./build/img/recent post4.jpg" width="90" height="65" alt="Recent post-4">
-                                    <b class="recent-title">Ut wisi enim ad minim veniam, quis</b>
-                                    <p class="post-date">July 17, 2016</p>
+                                    <div class="text-wrap">
+                                        <b class="recent-title">Ut wisi enim ad minim veniam, quis</b> 
+                                        <p class="post-date">July 17, 2016</p>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -214,36 +222,36 @@
                 </div>
                 <div class="popular">
                     <h3 class="title-text">popular tags</h3>
-                    <ul class="popular list">
-                       <li>
-                           <a href="#">construction</a>
+                    <ul class="popular-list background">
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">construction</a>
                        </li>
-                       <li>
-                           <a href="#">engineering</a>
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">engineering</a>
                        </li>
-                       <li>
-                           <a href="#">architecture</a>
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">architecture</a>
                        </li>
-                       <li>
-                           <a href="#">structural design</a>
+                       <li class="popular-list-item current">
+                           <a href="#" class="popular-ref current">structural design</a>
                        </li>
-                       <li>
-                           <a href="#">civil engineer</a>
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">civil engineer</a>
                        </li>
-                       <li>
-                           <a href="#">industrial</a>
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">industrial</a>
                        </li>
-                       <li>
-                           <a href="#">management</a>
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">management</a>
                        </li>
-                       <li>
-                           <a href="#">mechanical</a>
+                       <li class="popular-list-item">
+                           <a href="#" class="popular-ref">mechanical</a>
                        </li>     
                     </ul>
                 </div>
                 <div class="instagram">
                     <h3 class="title-text">instagram</h3>
-                    <ul class="instagram-list">
+                    <ul class="instagram-list background">
                         <li class="instagram-item">
                             <a href="#">
                                 <img src="./build/img/instagram img1.jpg" width="100" height="80" alt="Instagram-img1">

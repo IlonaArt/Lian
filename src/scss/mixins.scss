@@ -1,5 +1,5 @@
-@mixin ul-style {
-  padding: 0;
+@mixin ul-style ($padding: 0) {
+  padding: $padding;
   margin: 0;
   li {
     list-style: none;
@@ -7,4 +7,50 @@
   a {
     text-decoration: none;
   }
+}
+
+@mixin placeholder-blog {
+  &::-webkit-input-placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    color: #c4c4c4; 
+  }
+  &:-moz-placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    color: #c4c4c4; 
+  }
+  &::-moz-placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    color: #c4c4c4;   
+  }
+  &:-ms-input-placeholder { 
+    font-size: 16px;
+    line-height: 20px;
+    color: #c4c4c4; 
+  }  
+}
+
+@mixin placeholder-contacts {
+  &::-webkit-input-placeholder { 
+    font-size: 14px;
+    line-height: 24px;
+    color: #c4c4c4; 
+  }
+  &:-moz-placeholder { 
+    font-size: 14px;
+    line-height: 24px;
+    color: #c4c4c4; 
+  }
+  &::-moz-placeholder { 
+    font-size: 14px;
+    line-height: 24px;
+    color: #c4c4c4;   
+  }
+  &:-ms-input-placeholder { 
+    font-size: 14px;
+    line-height: 24px;
+    color: #c4c4c4; 
+  }  
 }

@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
+  color: #3d3d3d;
 }
 
 .nav-list-item.active {
@@ -115,7 +116,21 @@ a {
 .input {
   width: 100%;
   height: 100%;
+  font-style: italic;
   border: 0;
+  border-radius: 3px;
   padding: 0;
   background-color: #fafafa;
+  &:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  &:focus::-moz-placeholder {
+    color: transparent
+  }
+  &:focus:-moz-placeholder {
+    color: transparent
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent
+  }
 }
