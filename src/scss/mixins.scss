@@ -1,6 +1,6 @@
-@mixin ul-style ($padding: 0) {
+@mixin ul-style ($padding: 0, $margin: 0) {
   padding: $padding;
-  margin: 0;
+  margin: $margin;
   li {
     list-style: none;
   }

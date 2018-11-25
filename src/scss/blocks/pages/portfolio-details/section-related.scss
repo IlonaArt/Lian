@@ -15,15 +15,13 @@
         }
     }
     &-list {
-       @include ul-style(); 
+       @include ul-style($margin: 0 -17px); 
        display: flex;
        justify-content: center;
        flex-wrap: wrap;
     }
     &-item {
-        &:not(:last-child) {
-            margin-right: 35px;
-        }
+        margin: 0 17px;
         a {
             display: block;
             height: 100%;

@@ -1,0 +1,120 @@
+.post-section {
+    margin-bottom: 101px;
+    .container {
+        display: flex;
+        a {
+            display: block;
+            height: 100%;
+        }
+    }
+    .products-load-button {
+        display: block;
+        margin: 0 auto;
+    }
+    .post-list {
+        @include ul-style();
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 66px;
+    }
+    .post-list-item {
+        max-width: 358px;
+        margin-right: 32px;
+        background-color: #ffffff;
+        &.four {
+            max-height: 245px;
+            .post-text-wrap {
+                position: relative;
+                width: 360px;
+                &:active {
+                    &::after {
+                        background-color: rgba(0, 0, 0, 0.8); 
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    background-image: url("../img/play-icon.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 33px;
+        }
+        &:not(.four) {
+            .post-text-wrap {
+                padding: 29px 36px 40px 45px;
+            }
+        }
+        .post-text-wrap {
+            &.wordpress-wrap {
+                padding-top: 39px;
+            }
+        }    
+        .wordpress {
+            display: block;
+            max-width: 110px;
+            font-size: 13px;
+            line-height: 18px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            text-align: center;
+            padding: 4px 0;
+            margin-bottom: 20px;
+            color: #ffffff;
+            background-color: #000000;
+        }
+        .post-title {
+            display: block;
+            font-size: 20px;
+            line-height: 30px;
+            color: #333333;
+        }
+        .by-text {
+            display: inline-block;
+            color: #cccccc;
+            font-size: 13px;
+            line-height: 30px;
+            margin-left: 4px;
+        }
+        .post-text {
+            color: #777777;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 30px 0 40px;
+        }
+        .calendar-icon, {
+            fill: #9a9a9a;
+            margin-right: 6px;
+        }
+        .share-icon,
+        .like-icon,
+        .profile-icon {
+            fill: #cccccc;
+        }
+        .share-icon {
+            margin-right: 20px;
+        }
+    }
+
+    .post-date-wrap {
+        display: flex;
+        align-items: center;
+    }
+    .post-date {
+        color: #9a9a9a;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .post-icon-details {
+        margin-left: auto;
+    }
+}
