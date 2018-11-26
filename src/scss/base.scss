@@ -121,6 +121,9 @@ a {
   border-radius: 3px;
   padding: 0;
   background-color: #fafafa;
+  &:-ms-clear { 
+    display: none; 
+  }
   &:focus::-webkit-input-placeholder {
     color: transparent
   }

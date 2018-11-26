@@ -28,7 +28,7 @@
                 width: 360px;
                 &:active {
                     &::after {
-                        background-color: rgba(0, 0, 0, 0.8); 
+                        background-color: rgba(0, 0, 0, 0.5); 
                     }
                 }
                 &::after {
@@ -76,6 +76,12 @@
             font-size: 20px;
             line-height: 30px;
             color: #333333;
+            &:hover {
+                color: #777777;
+            }
+            &:active {
+                color: #9a9a9a;   
+            }
         }
         .by-text {
             display: inline-block;
@@ -90,7 +96,7 @@
             line-height: 24px;
             padding: 30px 0 40px;
         }
-        .calendar-icon, {
+        .calendar-icon {
             fill: #9a9a9a;
             margin-right: 6px;
         }
@@ -102,11 +108,35 @@
         .share-icon {
             margin-right: 20px;
         }
+        .share-button,
+        .like-button {
+            &:hover {
+                .share-icon,
+                .like-icon {
+                    fill: #777777;
+                }
+            }
+            &:active {
+                .share-icon,
+                .like-icon {
+                    fill: #333333;
+                }
+            }
+        }     
     }
+
 
     .post-date-wrap {
         display: flex;
         align-items: center;
+        .post-date:hover {
+            color: #000000;
+            cursor: pointer;
+        }
+        button {
+            @extend %borderless-btn;
+            cursor: pointer;
+        }
     }
     .post-date {
         color: #9a9a9a;
@@ -117,4 +147,5 @@
     .post-icon-details {
         margin-left: auto;
     }
+
 }
