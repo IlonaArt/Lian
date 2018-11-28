@@ -19,14 +19,15 @@
     }
     .post-list-item {
         max-width: 358px;
-        margin-right: 32px;
+        margin-right: 20px;
+        margin-bottom: 33px;
         background-color: #ffffff;
         &.four {
             max-height: 245px;
             .post-text-wrap {
                 position: relative;
                 width: 360px;
-                &:active {
+                &:hover {
                     &::after {
                         background-color: rgba(0, 0, 0, 0.5); 
                     }
@@ -45,8 +46,32 @@
                 }
             }
         }
-        &:not(:last-child) {
-            margin-bottom: 33px;
+        &.five {
+            position: relative;
+            height: 330px;
+            width: 360px;
+            margin-bottom: 0;
+            cursor: pointer;
+            .post-text-wrap {
+                display: none;
+                img {
+                    width: 100%;
+                }
+            }
+            &:hover {
+                .post-text-wrap {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    .post-title,
+                    .post-text {
+                        color: #ffffff;
+                    }
+                }
+            }
         }
         &:not(.four) {
             .post-text-wrap {
@@ -75,6 +100,7 @@
             display: block;
             font-size: 20px;
             line-height: 30px;
+            font-weight: 400;
             color: #333333;
             &:hover {
                 color: #777777;
