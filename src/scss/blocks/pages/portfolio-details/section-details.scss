@@ -1,8 +1,11 @@
 .section-details {
     padding-top: 72px;
     padding-bottom: 144px;
+    .container {
+        display: flex;
+    }
     .text-column {
-        max-width: 549px;
+        max-width: 48%;
         margin-right: 40px;
     }
     .headline-wrap {
@@ -24,6 +27,16 @@
         margin-bottom: 30px;
         .fa-heart {
             margin-right: 3px;
+        }
+    }
+    .like-button {
+        @extend %borderless-btn;
+        text-transform: inherit;
+        &:hover {
+            .date-text,
+            svg {
+                color: #a6a6a6;
+            }
         }
     }
     .branding-text {

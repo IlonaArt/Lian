@@ -4,12 +4,15 @@
         display: flex;
         a {
             display: block;
-            height: 100%;
         }
     }
     .products-load-button {
         display: block;
         margin: 0 auto;
+    }
+    .post-list-wrap {
+        flex-basis: 750px;
+        flex-shrink: 0;
     }
     .post-list {
         @include ul-style();
@@ -19,14 +22,18 @@
     }
     .post-list-item {
         max-width: 358px;
-        margin-right: 20px;
+        margin-right: 30px;
         margin-bottom: 33px;
         background-color: #ffffff;
-        &.four {
+        .blog-image-wrap {
+            height: 250px;
+        }
+        &.video {
             max-height: 245px;
             .post-text-wrap {
                 position: relative;
                 width: 360px;
+                height: 100%;
                 &:hover {
                     &::after {
                         background-color: rgba(0, 0, 0, 0.5); 
@@ -46,17 +53,19 @@
                 }
             }
         }
-        &.five {
+        &.overlay {
             position: relative;
             height: 330px;
             width: 360px;
-            margin-bottom: 0;
             cursor: pointer;
+            .blog-image-wrap {
+                height: 100%;
+            }
+            img {
+                width: 100%;
+            }
             .post-text-wrap {
                 display: none;
-                img {
-                    width: 100%;
-                }
             }
             &:hover {
                 .post-text-wrap {
@@ -65,6 +74,7 @@
                     content: "";
                     top: 0;
                     left: 0;
+                    height: 100%;
                     background-color: rgba(0, 0, 0, 0.8);
                     .post-title,
                     .post-text {
@@ -73,7 +83,7 @@
                 }
             }
         }
-        &:not(.four) {
+        &:not(.video) {
             .post-text-wrap {
                 padding: 29px 36px 40px 45px;
             }
@@ -131,7 +141,7 @@
         .profile-icon {
             fill: #cccccc;
         }
-        .share-icon {
+        .share-button {
             margin-right: 20px;
         }
         .share-button,
