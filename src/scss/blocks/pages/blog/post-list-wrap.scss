@@ -2,7 +2,8 @@
     margin-bottom: 101px;
     .container {
         display: flex;
-        @media(max-width: 1200px) {
+        @media(max-width: 700px) {
+            display: flex;
             flex-wrap: wrap-reverse;
             justify-content: center;
         }
@@ -17,9 +18,6 @@
     .post-list-wrap {
         flex-basis: 750px;
         flex-grow: 2;
-        @media(max-width: 1200px) {
-            flex-grow: 0;
-        }
     }
     .post-list {
         @include ul-style();
@@ -36,7 +34,7 @@
         background-color: #ffffff;
         .blog-image-wrap {
             height: 250px;
-            width: 358px;
+            width: 100%;
         }
         &.video {
             max-height: 245px;

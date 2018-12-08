@@ -12,10 +12,11 @@
     }
     &.show-nav {
       display: block;
-      position: fixed;
+      position: absolute;
       top: 14px;
       left: 50%;
       transform: translate(-50%, 50%);
+      z-index: 10;
     }
     &-item {
       padding-left: 40px;
