@@ -2,6 +2,10 @@
     margin-bottom: 101px;
     .container {
         display: flex;
+        @media(max-width: 1200px) {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
         a {
             display: block;
         }
@@ -13,6 +17,9 @@
     .post-list-wrap {
         flex-basis: 750px;
         flex-grow: 2;
+        @media(max-width: 1200px) {
+            flex-grow: 0;
+        }
     }
     .post-list {
         @include ul-style();
@@ -29,12 +36,13 @@
         background-color: #ffffff;
         .blog-image-wrap {
             height: 250px;
+            width: 358px;
         }
         &.video {
             max-height: 245px;
+            width: 360px;
             .post-text-wrap {
                 position: relative;
-                width: 360px;
                 height: 100%;
                 &:hover {
                     &::after {
@@ -86,6 +94,10 @@
             .post-text-wrap {
                 padding: 29px 36px 40px 45px;
             }
+        }
+        img {
+            height: 100%;
+            width: 100%;
         }
         .post-text-wrap {
             &.wordpress-wrap {

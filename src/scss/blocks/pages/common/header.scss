@@ -5,18 +5,24 @@
   min-height: 90px;
   background-color: #ffffff;
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);
+  @media(max-width: 700px) {
+    min-height: 70px;
+  }
   > .container {
     display: flex;
     align-items: center;
   }
   .logo {
+    width: 131px;
+    height: 35px;
     margin-right: auto;
-  }
-}
-.header-search-button {
-    @extend %borderless-btn;
-    cursor: pointer;
-    svg {
-      fill: #777777;
+    @media(max-width: 880px) {
+      width: 121px;
+      height: 30px;
     }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

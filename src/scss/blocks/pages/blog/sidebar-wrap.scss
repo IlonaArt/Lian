@@ -2,6 +2,9 @@
     max-width: 361px;
     min-width: 261px;
     flex-grow: 1;
+    @media(max-width: 1200px) {
+        max-width: 600px;
+ }    
     .title-text {
         text-align: center;
         padding: 14px 0 12px;

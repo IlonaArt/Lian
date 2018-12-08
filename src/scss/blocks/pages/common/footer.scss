@@ -25,10 +25,16 @@
     }
     &-item:not(:last-child) {
       margin-right: 54px;
+      @media(max-width: 450px) {
+        margin-right: 35px;
+      }
     }
     &-link {
       svg {
         fill: #777777;
+        @media(max-width: 700px) {
+          height: 19px;
+        }
       }
       &:hover {
         svg {
@@ -45,6 +51,7 @@
     line-height: 26px;
     text-transform: uppercase;
     letter-spacing: 0.33px;
+    text-align: center;
     span {
       color: #000000;
     }

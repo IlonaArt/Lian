@@ -1,3 +1,6 @@
 .background-section.blog {
     background-image: url("../img/blog-bg.jpg");
+    @media(max-width: 700px) {
+        background-image: url("../img/blog-bg_700.jpg");
+    }
 }
