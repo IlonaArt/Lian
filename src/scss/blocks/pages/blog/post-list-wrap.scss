@@ -25,6 +25,11 @@
         flex-wrap: wrap;
         margin-bottom: 66px;
     }
+    .blog-image {
+        overflow: hidden;
+        width: 100%;
+        height: 250px;
+    }
     .post-list-item {
         flex-basis: 258px;
         flex-grow: 1;
@@ -32,13 +37,15 @@
         margin-right: 30px;
         margin-bottom: 33px;
         background-color: #ffffff;
-        .blog-image-wrap {
-            height: 250px;
-            width: 100%;
+        @media(max-width: 550px) {
+            margin-right: 0;
         }
         &.video {
             max-height: 245px;
             width: 360px;
+            .blog-image {
+                height: 245px;
+            }
             .post-text-wrap {
                 position: relative;
                 height: 100%;
@@ -66,8 +73,8 @@
             height: 330px;
             width: 360px;
             cursor: pointer;
-            .blog-image-wrap {
-                height: 100%;
+            .blog-image {
+                height: 330px;
             }
             .post-text-wrap {
                 display: none;

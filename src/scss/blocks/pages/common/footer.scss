@@ -1,13 +1,11 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 64px;
   padding-bottom: 47px;
   box-shadow: 0 -3px 5px 1px rgba(163, 163, 163, 0.1);
 
   .logo {
     margin-bottom: 44px;
+    text-align: center;
   }
 
   .social {
