@@ -13,6 +13,9 @@
   background-size: cover;
   &.slide-1 {
     background-image: url("../img/head-slider-1.jpg");
+    @media(max-width: 700px) {
+      background-image: url("../img/head-slider-1_700.jpg");
+    }
   }
   &.slide-2 {
     background-image: url("../img/head-slider-2.jpg");

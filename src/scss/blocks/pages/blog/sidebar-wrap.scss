@@ -44,18 +44,16 @@
             fill: #ffffff;
         }
     }
-    
-}
-
-.title-text {
-    position: relative;
-    &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -15px;
-        border: 8px solid transparent;
-        border-top-color: #ebebeb;
+    .title-text {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            border: 8px solid transparent;
+            border-top-color: #ebebeb;
+        }
     }
 }
 

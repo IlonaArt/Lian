@@ -9,11 +9,16 @@
     max-width: 595px;
     margin-bottom: 40px;
     text-align: center;
+    .title-text {
+        @media(max-width: 700px) {
+            font-weight: 300;
+        }
+    }
     &-list {
         @include ul-style();
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -15px;
+        justify-content: center;
     }
     &-item {
         margin: 0 15px 30px 15px;
@@ -24,6 +29,9 @@
                 font-size: 24px;
                 letter-spacing: 0.96px;
                 margin-bottom: 8px;
+                @media(max-width: 700px) {
+                    font-weight: 300;
+                }
             }
             .who {
                 font-size: 16px;
@@ -38,6 +46,12 @@
             max-width: 264px;
             font-size: 12px;
             letter-spacing: 0.48px;
+            @media(max-width: 1180px) {
+                text-align: left;
+            }
+            @media(max-width: 800px) {
+                font-size: 0.875em;
+            }
         }
     }
     &-ref {
