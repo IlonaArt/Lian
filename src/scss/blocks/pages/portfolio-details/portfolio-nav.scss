@@ -3,10 +3,22 @@
     .container {
         display: flex;
         height: 60px;
+        @media(max-width: 700px) {
+            justify-content: center;
+        }
+        @media(max-width: 600px) {
+            padding: 0;
+        }
     }
 
     .link {
         align-items: center;
+        @media(max-width: 600px) {
+            width: 100%;
+        }
+        @media(max-width: 490px) {
+            font-size: 11px;
+        }
         &:hover {
             svg {
                 fill: #777777;
@@ -21,6 +33,9 @@
             display: flex;
             justify-content: center;
             border-left: 1px solid #e1e1e1;
+            @media(max-width: 600px) {
+                width: 100%;
+            }
         }
         &.prev {
             .arrows-text {
@@ -41,6 +56,17 @@
             border: 0 solid #e1e1e1;
             border-right-width: 1px;
             border-left-width: 1px;
+            @media(max-width: 700px) {
+                margin-left: 0;
+                border-left-width: 0;
+            }
+            @media(max-width: 600px) {
+                width: 100%;
+                justify-content: center;
+            }
+            @media(max-width: 490px) {
+                padding: 0 22px;
+            }
             .arrows-text {
                 margin-left: 11px;
             }
@@ -51,6 +77,9 @@
             line-height: 24px;
             text-transform: uppercase;
             color: #071f08;
+            @media(max-width: 490px) {
+                font-size: 0.988em;
+            }
         }
     }
 }

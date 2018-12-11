@@ -66,6 +66,8 @@
       }
     }
   }
+}  
+
   .nav-button {
     @extend %borderless-btn;
     svg {
@@ -76,6 +78,8 @@
       }
     }
   }
+
+
   .menu-button {
     @extend %borderless-btn;
     display: none;
@@ -87,4 +91,3 @@
       fill: #777777;
     }
   }
-}

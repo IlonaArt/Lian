@@ -1,12 +1,22 @@
 .section-details {
     padding-top: 72px;
     padding-bottom: 144px;
+    @media(max-width: 900px) {
+        padding-bottom: 80px;
+    }
+    @media(max-width: 700px) {
+        padding-top: 30px;
+    }
     .container {
         display: flex;
     }
     .text-column {
         max-width: 48%;
         margin-right: 40px;
+        @media(max-width: 700px) {
+            max-width: 100%;
+            margin-right: 0;
+        }
     }
     .headline-wrap {
         margin-bottom: 18px;

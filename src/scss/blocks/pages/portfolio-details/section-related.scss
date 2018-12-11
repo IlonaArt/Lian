@@ -1,5 +1,6 @@
 .section-related {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    padding: 0 20px;
 }
 
 .related {
@@ -12,6 +13,12 @@
             font-size: 30px;
             letter-spacing: 12px;
             margin-bottom: 36px;
+            @media(max-width: 700px) {
+                font-weight: 300;
+            }
+            @media(max-width: 430px) {
+                line-height: 28px;
+            }
         }
     }
     &-list {
@@ -21,7 +28,7 @@
        flex-wrap: wrap;
     }
     &-item {
-        margin: 0 17px;
+        margin: 0 17px 20px;
         a {
             display: block;
             height: 100%;
