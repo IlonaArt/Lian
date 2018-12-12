@@ -170,3 +170,22 @@ a {
     color: transparent
   }
 }
+
+.date-text {
+  margin-right: 66px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 48px;
+  color: #555555;
+}
+.like-button {
+  @extend %borderless-btn;
+  text-transform: inherit;
+  &:hover {
+      .date-text,
+      svg {
+          color: #a6a6a6;
+      }
+  }
+}
