@@ -154,6 +154,12 @@ a {
   border-radius: 3px;
   padding: 0;
   background-color: #fafafa;
+  &.contact {
+    @include placeholder-blog();
+    background-color: #ffffff;
+    padding-left: 29px;
+    padding-right: 46px;
+}
   &:-ms-clear { 
     display: none; 
   }

@@ -57,12 +57,52 @@
                     <b class="date-text">by Jenn Pereira</b>
                     <b class="date-text">February 28, 2015</b>
                     <button class="like-button" type="button" aria-label="to like">
-                        <svg aria-hidden="true" width="15" height="13" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                        <svg aria-hidden="true" width="15" height="13" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
                         <b class="date-text">324 likes</b>
                     </button>
                 </div>
-
+                <img src="./build/img/single_post.jpg" width="945" height="480" alt="single post">
             </header>
+            <div class="post-wrap">
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                     ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                <p class="article-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+                    dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent 
+                    luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+                    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                <blockquote class="blockquote">
+                    <p class="blockquote-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                </blockquote>    
+                <b class="article-heading">this is a heading</b>
+                <p class="article-text">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                     Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+                    qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, 
+                    anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis 
+                    videntur parum clari, fiant sollemnes in futurum.</p>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
+                    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate 
+                    velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio 
+                    dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor 
+                    cum soluta nobis eleifend option congue.</p>
+            </div>
+            <footer class="blog-footer">
+                <p class="comments-text">Leave a Comment</p>
+                <form class="form-comments" action="#" name="comments" method="POST">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input class="input contact" id="name" type="text" placeholder="Name">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input class="input contact" id="email" type="email" placeholder="Email">
+                    <label for="email" class="visually-hidden">website</label>
+                    <input class="input contact" id="email" type="text"  placeholder="Website">
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea class="input contact" id="message" placeholder="Message"></textarea>
+                </form>
+            </footer>
         </div>
     </article>
     <footer class="main-footer">
