@@ -2,6 +2,7 @@
     .container {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
         max-width: 1005px;
     }
@@ -30,6 +31,7 @@
     }
 
     .post-wrap {
+        max-width: 934px;
         margin-bottom: 78px;
     }
     .article-text {
@@ -78,7 +80,18 @@
 }
 
 .form-comments {
+    max-width: 810px;
+    .input.contact {
+        @include placeholder-contacts(); 
+        margin-bottom: 22px;
+        padding: 12px 15px;
+        border: 1px solid #e1e1e1;
+        background-color: white;
+        &.yrname {
+            padding-left: 11px;
+        }
+    } 
     textarea {
-        @include placeholder-contacts();
+        resize: none;
     }
 }

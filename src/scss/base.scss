@@ -157,9 +157,7 @@ a {
   &.contact {
     @include placeholder-blog();
     background-color: #ffffff;
-    padding-left: 29px;
-    padding-right: 46px;
-}
+  }
   &:-ms-clear { 
     display: none; 
   }
