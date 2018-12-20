@@ -155,6 +155,7 @@
     } 
     textarea {
         resize: none;
+        width: 100%;
     }
     .button-send {
         @extend %borderless-btn;

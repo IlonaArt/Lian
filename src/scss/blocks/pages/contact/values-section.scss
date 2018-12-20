@@ -1,0 +1,31 @@
+.values-section {
+    .values {
+        max-width: 595px;
+        margin: 0 auto 63px;
+        text-align: center;
+        .title-text {
+            @include title-text($font-size: 1.875em, $letter-spacing: 12px);
+            margin-bottom: 36px;
+        }
+    }
+    .values-list {
+        @include ul-style();
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-item {
+            flex-basis: 300px;
+            min-height: 300px;
+            flex-grow: 1;
+            margin: 0 17px 30px;
+            &-img {
+                height: 248px;
+            }
+        }
+        .values-img {
+            overflow: hidden;
+            height: 248px;
+            width: 100%;
+        }
+    }
+}

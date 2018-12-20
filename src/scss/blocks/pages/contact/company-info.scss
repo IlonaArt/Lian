@@ -2,17 +2,31 @@
     .container {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 79px;
     }
     &-wrap {
-        margin-right: 72px;
+        margin-right: 78px;
+        flex-basis: 309px;
+        min-width: 309px;
+        flex-grow: 1;
     }
     .title-text {
         @include title-text($font-size: 1.875em, $letter-spacing: 12px);
         margin-bottom: 10px;
     }
-    .text {
+    .company-text {
+        position: relative;
         font-size: 1em;
-        margin-bottom: 64px;
+        padding-bottom: 64px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 40px;
+            left: 0;
+            width: 60px;
+            height: 1px;
+            background-color: #000000;
+        }
     }
     .working-hours {
         font-size: 0.938em;
@@ -32,11 +46,29 @@
         }
     }
     
+    .form-wrap {
+        flex-basis: 750px;
+        flex-grow: 1;
+        min-width: 750px;
+    }
     .form-comments {
         justify-content: flex-start;
         max-width: 751px;
-        input {
-            width: 358px;
+        .input {
+            margin-bottom: 32px;
+            &.yrname {
+                margin-right: 34px;
+            }
+            &.yrmail {
+                margin-right: 0;
+            }
+            &:not(.yrmessage) {
+                width: 358px;
+            }
+        }
+
+        button {
+            padding: 16px 49px 16px 57px;
         }
     }
 }
