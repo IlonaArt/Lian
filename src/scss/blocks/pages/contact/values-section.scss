@@ -14,49 +14,74 @@
             margin-bottom: 36px;
             @media (max-width: 880px) {
                 font-size: 1.3em;
+                letter-spacing: 12px;
+                font-weight: 300;
+            }
+            @media(max-width: 450px) {
+                font-size: 1.1em;
+                letter-spacing: 7.2px;
+            }
+        }
+        .text {
+            @media(max-width: 450px) {
+                font-size: 0.838em;
             }
         }
     }
-    .values-list {
-        @include ul-style();
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        &-item {
-            flex-basis: 300px;
-            min-height: 300px;
-            flex-grow: 1;
-            margin: 0 17px 30px;
-            @media(max-width: 450px) {
-                margin-left: 0;
-                margin-right: 0;
+}
+
+.values-list {
+    @include ul-style();
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-item {
+        flex-basis: 300px;
+        min-height: 300px;
+        flex-grow: 1;
+        margin: 0 17px 30px;
+        @media(max-width: 450px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &:last-child {
+            @media(max-width: 1078px) {
+                flex-basis: 354px;
+                flex-grow: 0;
             }
-            &:last-child {
-                @media(max-width: 1061px) {
-                    flex-basis: 354px;
-                    flex-grow: 0;
-                }
-                @media(max-width: 727px) {
-                    flex-grow: 1;
-                    flex-basis: 300px;
-                }
-            }
-            &-img {
-                height: 248px;
-                margin-bottom: 25px;
+            @media(max-width: 727px) {
+                flex-grow: 1;
+                flex-basis: 300px;
             }
         }
-        .values-img {
-            overflow: hidden;
+        &-img {
             height: 248px;
-            width: 100%;
+            margin-bottom: 25px;
         }
-        .values-text-wrap {
-            .title-text {
-                margin-bottom: 32px;
-                @media(max-width: 1226px) {
-                    text-align: center;
-                }
+    }
+    .values-img {
+        overflow: hidden;
+        height: 248px;
+        width: 100%;
+    }
+    .values-text-wrap {
+        .title-text {
+            @include title-text($font-size: 18px, $letter-spacing: 7.2px);
+            margin-bottom: 32px;
+            @media(max-width: 1226px) {
+                text-align: center;
+            }
+            @media(max-width: 878px) {
+                font-size: 1em;
+                font-weight: 300;
+            }
+            @media(max-width: 500px) {
+                margin-bottom: 15px;
+            }
+        }
+        .text {
+            @media(max-width: 450px) {
+                font-size: 0.838em;
             }
         }
     }

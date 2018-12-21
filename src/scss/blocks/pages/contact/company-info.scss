@@ -19,7 +19,7 @@
         @media(max-width: 800px) {
             margin-right: 3%;
         }
-        @media(max-width: 740px) {
+        @media(max-width: 757px) {
             text-align: center;
         }
     }
@@ -39,6 +39,9 @@
         font-size: 1em;
         padding-bottom: 58px;
         color: #777777;
+        @media(max-width: 450px) {
+            font-size: 0.838em;
+        }
         &::before {
             position: absolute;
             content: "";
@@ -54,6 +57,9 @@
         letter-spacing: 0.38px;
         color: #777777;
         margin-bottom: 32px;
+        @media(max-width: 450px) {
+            font-size: 0.838em;
+        }
         &-info {
             color: #222222;
         }
@@ -62,6 +68,9 @@
         font-weight: 700;
         letter-spacing: 0.38px;
         color: #555555;
+        @media(max-width: 450px) {
+            font-size: 0.838em;
+        }
         &:not(:last-child) {
             margin-bottom: 6px;
         }
@@ -86,7 +95,7 @@
             @media (max-width: 787px) {
                 width: 100%;
             }
-            @media(max-width: 740px) {
+            @media(max-width: 757px) {
                 flex-grow: 0;
             }
             &.yrname {
@@ -105,7 +114,7 @@
 
         button {
             padding: 16px 49px 16px 57px;
-            @media(max-width: 740px) {
+            @media(max-width: 757px) {
                 margin: 0 auto;
             }
         }
