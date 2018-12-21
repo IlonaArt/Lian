@@ -1,4 +1,10 @@
 .values-section {
+    margin-bottom: 32px;
+    .container {
+        @media(max-width: 450px) {
+            padding: 0 15px;
+        }
+    }
     .values {
         max-width: 595px;
         margin: 0 auto 63px;
@@ -6,6 +12,9 @@
         .title-text {
             @include title-text($font-size: 1.875em, $letter-spacing: 12px);
             margin-bottom: 36px;
+            @media (max-width: 880px) {
+                font-size: 1.3em;
+            }
         }
     }
     .values-list {
@@ -18,14 +27,37 @@
             min-height: 300px;
             flex-grow: 1;
             margin: 0 17px 30px;
+            @media(max-width: 450px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &:last-child {
+                @media(max-width: 1061px) {
+                    flex-basis: 354px;
+                    flex-grow: 0;
+                }
+                @media(max-width: 727px) {
+                    flex-grow: 1;
+                    flex-basis: 300px;
+                }
+            }
             &-img {
                 height: 248px;
+                margin-bottom: 25px;
             }
         }
         .values-img {
             overflow: hidden;
             height: 248px;
             width: 100%;
+        }
+        .values-text-wrap {
+            .title-text {
+                margin-bottom: 32px;
+                @media(max-width: 1226px) {
+                    text-align: center;
+                }
+            }
         }
     }
 }
