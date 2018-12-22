@@ -1,0 +1,1 @@
+tns({container:"#head-slider",autoHeight:!0,items:1,swipeAngle:!1,speed:400,controls:!1,navPosition:"bottom"});

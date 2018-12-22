@@ -1,0 +1,1 @@
+var t=document.querySelector(".products-list");new Masonry(t,{itemSelector:".products-item",columnWidth:360,gutter:30});

@@ -41,9 +41,9 @@
         .fa-heart {
             margin-right: 3px;
         }
-    }
-    .date text {
-        margin-right: 66px;
+        .date-text {
+            margin-right: 62px;
+        }
     }
     .branding-text {
         margin-top: 15px;
@@ -87,7 +87,9 @@
             margin-right: 3px;
             fill: #ffffff;
         }
-        &:hover {
+        &:hover,
+        &:focus {
+            background-color: #000000;
             .social-list {
                 display: flex;
             }
