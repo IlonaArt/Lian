@@ -30,16 +30,20 @@
     &-item {
         flex-basis: 300px;
         min-width: 300px;
-        flex-grow: 1;
         margin: 0 15px 30px 15px;
+        @media(max-width: 659px) {
+            flex-grow: 0;
+            flex-basis: 358px;
+            min-width: 358px;
+        }
+        @media(max-width: 380px) {
+            margin-right: 0;
+            margin-left: 0;
+        }
         &:last-child {
-            @media(max-width: 989px) {
-                flex-grow: 0;
-                flex-basis: 438px;
-            }
-            @media(max-width: 659px) {
-                flex-grow: 1;
-                flex-basis: 300px;
+            @media(max-width: 1006px) {
+                flex-basis: 358px;
+                min-width: 358px;
             }
         }
         .text-wrap {

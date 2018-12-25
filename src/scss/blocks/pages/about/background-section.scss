@@ -3,4 +3,9 @@
     @media(max-width: 900px) {
         background-image: url("../img/About-img_700.jpg");
     }
+    .background-title {
+        @media(max-width: 348px) {
+            font-size: 1em;
+        }
+    }
 }

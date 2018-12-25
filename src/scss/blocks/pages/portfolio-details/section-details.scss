@@ -13,6 +13,11 @@
             padding: 0 15px;
         }
     }
+    .slide-column {
+        min-width: 552px;
+        flex-basis: 552px;
+        flex-grow: 1;
+    }
     .text-column {
         max-width: 48%;
         margin-right: 40px;
