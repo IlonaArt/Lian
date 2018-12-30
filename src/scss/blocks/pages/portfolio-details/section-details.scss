@@ -140,6 +140,17 @@
             }
         }
     }
+   .slide-column {
+        .tns-inner {
+            position: relative;
+        }
+        .slide-column {
+            position: absolute;
+        }
+        .tns-liveregion {
+            display: none;
+        }
+    }
 }
 
 .agency-text {
