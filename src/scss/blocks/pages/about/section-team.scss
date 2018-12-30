@@ -26,6 +26,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
     &-item {
         flex-basis: 300px;
@@ -49,9 +50,6 @@
         .text-wrap {
             padding: 28px 36px 31px;
             background-color: #ffffff;
-            @media(max-width: 659px) {
-                text-align: center;
-            }
             .title-text {
                 font-size: 24px;
                 letter-spacing: 0.96px;
@@ -70,17 +68,12 @@
             } 
         }
         .text {
-            max-width: 264px;
             font-size: 12px;
             letter-spacing: 0.48px;
-            @media(max-width: 1180px) {
-                text-align: left;
-            }
             @media(max-width: 800px) {
                 font-size: 0.875em;
             }
             @media(max-width: 989px) {
-                max-width: 100%;
                 font-size: 1em;
             }
         }

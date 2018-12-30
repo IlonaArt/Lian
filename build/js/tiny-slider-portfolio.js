@@ -1,1 +1,1 @@
-tns({container:"#portfolio-slider",items:1,controlsContainer:"#customize-controls",navContainer:"#customize-thumbnails",navAsThumbnails:!0});
+tns({container:"#portfolio-slider",items:1,navAsThumbnails:!0,fixedWidth:"552px",controls:!1});

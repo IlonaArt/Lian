@@ -8,51 +8,27 @@
     text-decoration: none;
   }
 }
-
-@mixin placeholder-blog {
+@mixin placeholder($font-size: 16px, $line-height: 20px, $color: #c4c4c4) {
   &::-webkit-input-placeholder { 
-    font-size: 16px;
-    line-height: 20px;
-    color: #c4c4c4; 
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color; 
   }
   &:-moz-placeholder { 
-    font-size: 16px;
-    line-height: 20px;
-    color: #c4c4c4; 
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color; 
   }
   &::-moz-placeholder { 
-    font-size: 16px;
-    line-height: 20px;
-    color: #c4c4c4;   
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;   
   }
   &:-ms-input-placeholder { 
-    font-size: 16px;
-    line-height: 20px;
-    color: #c4c4c4; 
-  }  
-}
-
-@mixin placeholder-contacts {
-  &::-webkit-input-placeholder { 
-    font-size: 14px;
-    line-height: 24px;
-    color: #c4c4c4; 
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color; 
   }
-  &:-moz-placeholder { 
-    font-size: 14px;
-    line-height: 24px;
-    color: #c4c4c4; 
-  }
-  &::-moz-placeholder { 
-    font-size: 14px;
-    line-height: 24px;
-    color: #c4c4c4;   
-  }
-  &:-ms-input-placeholder { 
-    font-size: 14px;
-    line-height: 24px;
-    color: #c4c4c4; 
-  }  
 }
 
 @mixin title-text($font-size: 18px, $letter-spacing: 7.2px) {
