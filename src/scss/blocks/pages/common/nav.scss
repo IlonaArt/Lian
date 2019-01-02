@@ -4,6 +4,7 @@
     @include ul-style();
     display: flex;
     margin-right: 60px;
+    z-index: 10;
     @media(max-width: 880px) {
       margin-right: 40px;
     }
@@ -13,10 +14,14 @@
     &.show-nav {
       display: block;
       position: absolute;
-      top: 14px;
+      width: 100%;
+      padding-top: 20px;
+      top: 0;
       left: 50%;
+      text-align: center;
       transform: translate(-50%, 50%);
-      z-index: 10;
+      z-index: 100;
+      background-color:rgba(255, 255, 255, 0.6);
     }
     &-item {
       padding-left: 40px;

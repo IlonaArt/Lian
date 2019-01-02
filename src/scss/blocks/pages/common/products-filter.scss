@@ -13,6 +13,10 @@
     border: solid 0 #e1e1e1;
     border-top-width: 1px;
     border-bottom-width: 1px;
+    @media(max-width: 818px) {
+      justify-content: space-around;
+      height: 100%;
+    }
   }
   &-item {
     position: relative;
@@ -28,6 +32,9 @@
         height: 30px;
         background-color: #d7d7d7;
         transform: rotate(20deg);
+        @media(max-width: 818px) {
+          display: none;
+        }
       }
     }
     &.active {
@@ -49,6 +56,9 @@
     &:hover,
     &:focus {
       color: #444444;
+    }
+    @media(max-width: 877px) {
+      font-size: 0.750em;
     }
   }
 }

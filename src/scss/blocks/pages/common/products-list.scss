@@ -1,5 +1,10 @@
 .products {
   background-color: #fafafa;
+  .container {
+    @media(max-width: 700px) {
+      padding: 0 15px;
+    }
+  }
   &-list {
     @include ul-style();
     margin-bottom: 36px;
@@ -29,6 +34,9 @@
       &::after {
         background-color: rgba(0, 0, 0, 0.7);
       }
+    }
+    img {
+      display: block;
     }
   }
 

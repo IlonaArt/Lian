@@ -83,20 +83,6 @@ a {
 }
 
 .title-text {
-  // color: #000;
-  // font-size: 18px;
-  // line-height: 24px;
-  // font-weight: 300;
-  // letter-spacing: 7.2px;
-  // text-transform: uppercase;
-  // @media(max-width: 880px) {
-  //   font-size: 0.875em;
-  // }
-  // @media(max-width: 700px) {
-  //   font-size: 0.800em;
-  //   font-weight: 700;
-  //   letter-spacing: 4.2px;
-  // }
   @include title-text();
 }
 
@@ -111,9 +97,6 @@ a {
   background-position: center;
   margin-bottom: 72px;
   box-shadow: 0px 3px 5px -1px inset rgba(0, 0, 0, 0.15);
-  &.opacity {
-    opacity: 0.1;
-  }
   @media(max-width: 850px) {
     margin-bottom: 30px;
   }
