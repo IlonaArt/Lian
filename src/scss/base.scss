@@ -140,7 +140,7 @@ a {
   padding: 0;
   background-color: #fafafa;
   &.contact {
-    @include placeholder-blog();
+    @include placeholder();
     background-color: #ffffff;
   }
   &:-ms-clear { 

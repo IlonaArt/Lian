@@ -12,16 +12,17 @@
       display: none;
     }
     &.show-nav {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       position: absolute;
+      z-index: 10;
       width: 100%;
-      padding-top: 20px;
-      top: 0;
-      left: 50%;
-      text-align: center;
-      transform: translate(-50%, 50%);
-      z-index: 100;
-      background-color:rgba(255, 255, 255, 0.6);
+      top: 90px;
+      left: 0;
+      margin-right: 0;
+      padding-top: 25px;
+      background-color: rgba(255, 255, 255, 0.9);
     }
     &-item {
       padding-left: 40px;

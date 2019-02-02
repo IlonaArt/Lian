@@ -1,1 +1,0 @@
-tns({container:"#portfolio-slider",items:1,controlsContainer:"#customize-controls",navAsThumbnails:!0});
